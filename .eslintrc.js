@@ -7,7 +7,6 @@ module.exports = {
     'extends': [
       'plugin:@typescript-eslint/recommended', // Out of the box Typescript rules
       'standard', // Out of the box StandardJS rules
-      'standard-with-typescript'
     ],
     'plugins': [
       '@typescript-eslint', // Let's us override rules below.
@@ -25,14 +24,16 @@ module.exports = {
           'delimiter': 'comma',
           'requireLast': false
         }
-      }],
-      '@typescript-eslint/indent': 'off', // This is the job of StandardJS, they are competing rules so we turn off the Typescript one. 
+			}],
+			"indent": "off",
+			"no-tabs": 0,
+      '@typescript-eslint/indent': 'off', // This is the job of StandardJS, they are competing rules so we turn off the Typescript one.
       '@typescript-eslint/comma-spacing': "off",
       '@typescript-eslint/method-signature-style': "off",
       '@typescript-eslint/return-await': "off",
       '@typescript-eslint/restrict-template-expressions': "off",
       '@typescript-eslint/strict-boolean-expressions': 'off',
-      'no-unused-vars': 'off', // On the fence about using this one, sometimes we import a package that is never used directly. 
+      'no-unused-vars': 'off', // On the fence about using this one, sometimes we import a package that is never used directly.
       'node/no-unsupported-features/es-syntax': 'off', // Allows us to use Import and Export keywords.
       'no-undef': 'off',
       "jest/no-disabled-tests": "warn",
