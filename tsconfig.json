@@ -7,9 +7,9 @@
     "sourceMap": true,
     "rootDir": "src",
     "baseUrl": "src",
-    // "paths": {
-    //   "@/*": ["*"]
-    // }
+    "paths": {
+      "@/*": ["*"]
+    }
   },
   "include": [
     "src"
