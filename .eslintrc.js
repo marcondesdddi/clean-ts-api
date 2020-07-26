@@ -35,7 +35,8 @@ module.exports = {
       '@typescript-eslint/strict-boolean-expressions': 'off',
       'no-unused-vars': 'off', // On the fence about using this one, sometimes we import a package that is never used directly.
       'node/no-unsupported-features/es-syntax': 'off', // Allows us to use Import and Export keywords.
-      'no-undef': 'off',
+			'no-undef': 'off',
+			"no-useless-constructor": "off",
       "jest/no-disabled-tests": "warn",
       "jest/no-focused-tests": "error",
       "jest/no-identical-title": "error",
