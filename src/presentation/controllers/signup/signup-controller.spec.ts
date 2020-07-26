@@ -1,7 +1,7 @@
 /* eslint-disable no-tabs */
-import { SignUpController } from './signup'
+import { SignUpController } from './signup-controller'
 import { MissingParamError, ServerError } from '../../errors'
-import { AccountModel, AddAccount, AddAccountModel, Validation } from './signup-protocols'
+import { AccountModel, AddAccount, AddAccountModel, Validation } from './signup-controller-protocols'
 import { HttpRequest } from '@/presentation/protocols'
 import { ok, serverError, badRequest } from '../../helpers/http/http-helper'
 
