@@ -4,3 +4,4 @@ coverage
 globalConfig.json
 database
 .vscode
+!src/data
